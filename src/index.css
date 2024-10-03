@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", system-ui;
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    background-color: #464646;
+  }
+}
+
+@keyframes scaleBounce {
+  0%,to {
+      transform: scaleY(.3)
+  }
+
+  50% {
+      transform: scaleY(1.5)
+  }
+}
+
+.is-playing div {
+  animation: scaleBounce 1s ease infinite;
+}
+
+.is-playing div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.is-playing div:nth-child(2) {
+  animation-delay: .2s
+}
+
+.is-playing div:nth-child(3) {
+  animation-delay: .4s
+}
