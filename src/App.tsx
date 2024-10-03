@@ -1,5 +1,4 @@
 import {
-  ArrowUp,
   AudioLines,
   ChevronDown,
   ChevronUp,
@@ -222,6 +221,7 @@ export default function App() {
             </div>
           </div>
 
+          {/* Big player container */}
           {player && (
             <div className="absolute inset-0 w-full h-full flex items-center justify-center z-10">
               <div
@@ -237,7 +237,7 @@ export default function App() {
                     <ChevronDown size={26} color="#fff" />
                   </button>
                   <p className="text-white font-semibold text-sm">SS Coding</p>
-                  <button>
+                  <button onClick={toggleMiniPlayer} id="toggle-button">
                     <ChevronUp size={26} color="#fff" />
                   </button>
                 </div>
