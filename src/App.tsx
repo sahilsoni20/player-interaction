@@ -88,7 +88,7 @@ export default function App() {
           </div>
 
           {/* Name & image card */}
-          <div className="w-full relative flex flex-col items-center gap-5 justify-start h-[calc(100%-202px)] overflow-y-scroll pt-1 px-3 pb-2 z-[2]">
+          <div className="w-full relative flex flex-col items-center gap-5 justify-start h-[calc(100%-202px)] overflow-hidden pt-1 px-3 pb-2 z-[2]">
             <div className="w-full grid grid-cols-2 gap-2">
               {Player.map((player, index) => (
                 <div
